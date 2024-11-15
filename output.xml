@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2024-11-12T17:10:06.421961" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/heikkinv/Documents/ohtu/ohtu_webcounter/webcounter/src/tests">
+<suite id="s1-s1" name="Increment" source="/home/heikkinv/Documents/ohtu/ohtu_webcounter/webcounter/src/tests/increment.robot">
+<kw name="Open And Configure Browser" owner="resource" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-12T17:10:06.511976" elapsed="0.000209"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:10:06.512462" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-12T17:10:06.512312" elapsed="0.382020"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:10:06.511481" elapsed="0.383047"/>
+</kw>
+<test id="s1-s1-t1" name="At start the counter is zero" line="7">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:10:06.895651" level="INFO">Opening url 'http://localhost:5001'</msg>
+<msg time="2024-11-12T17:10:07.584810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-12T17:10:07.585261" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+#0 0x62a6a31088da &lt;unknown&gt;
+#1 0x62a6a2c2d860 &lt;unknown&gt;
+#2 0x62a6a2c25a61 &lt;unknown&gt;
+#3 0x62a6a2c16278 &lt;unknown&gt;
+#4 0x62a6a2c17f8a &lt;unknown&gt;
+#5 0x62a6a2c1651a &lt;unknown&gt;
+#6 0x62a6a2c15e14 &lt;unknown&gt;
+#7 0x62a6a2c15d32 &lt;unknown&gt;
+#8 0x62a6a2c13e2c &lt;unknown&gt;
+#9 0x62a6a2c1447a &lt;unknown&gt;
+#10 0x62a6a2c30109 &lt;unknown&gt;
+#11 0x62a6a2cbc705 &lt;unknown&gt;
+#12 0x62a6a2c9d4d2 &lt;unknown&gt;
+#13 0x62a6a2cbba9b &lt;unknown&gt;
+#14 0x62a6a2c9d273 &lt;unknown&gt;
+#15 0x62a6a2c6c362 &lt;unknown&gt;
+#16 0x62a6a2c6d33e &lt;unknown&gt;
+#17 0x62a6a30d72ef &lt;unknown&gt;
+#18 0x62a6a30dbdf2 &lt;unknown&gt;
+#19 0x62a6a30c5177 &lt;unknown&gt;
+#20 0x62a6a30dc571 &lt;unknown&gt;
+#21 0x62a6a30ac2ee &lt;unknown&gt;
+#22 0x62a6a30f7b88 &lt;unknown&gt;
+#23 0x62a6a30f7d8a &lt;unknown&gt;
+#24 0x62a6a310758c &lt;unknown&gt;
+#25 0x79706a294ac3 &lt;unknown&gt;
+</msg>
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="FAIL" start="2024-11-12T17:10:06.895270" elapsed="0.691964">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+#0 0x62a6a31088da &lt;unknown&gt;
+#1 0x62a6a2c2d860 &lt;unknown&gt;
+#2 0x62a6a2c25a61 &lt;unknown&gt;
+#3 0x62a6a2c16278 &lt;unknown&gt;
+#4 0x62a6a2c17f8a &lt;unknown&gt;
+#5 0x62a6a2c1651a &lt;unknown&gt;
+#6 0x62a6a2c15e14 &lt;unknown&gt;
+#7 0x62a6a2c15d32 &lt;unknown&gt;
+#8 0x62a6a2c13e2c &lt;unknown&gt;
+#9 0x62a6a2c1447a &lt;unknown&gt;
+#10 0x62a6a2c30109 &lt;unknown&gt;
+#11 0x62a6a2cbc705 &lt;unknown&gt;
+#12 0x62a6a2c9d4d2 &lt;unknown&gt;
+#13 0x62a6a2cbba9b &lt;unknown&gt;
+#14 0x62a6a2c9d273 &lt;unknown&gt;
+#15 0x62a6a2c6c362 &lt;unknown&gt;
+#16 0x62a6a2c6d33e &lt;unknown&gt;
+#17 0x62a6a30d72ef &lt;unknown&gt;
+#18 0x62a6a30dbdf2 &lt;unknown&gt;
+#19 0x62a6a30c5177 &lt;unknown&gt;
+#20 0x62a6a30dc571 &lt;unknown&gt;
+#21 0x62a6a30ac2ee &lt;unknown&gt;
+#22 0x62a6a30f7b88 &lt;unknown&gt;
+#23 0x62a6a30f7d8a &lt;unknown&gt;
+#24 0x62a6a310758c &lt;unknown&gt;
+#25 0x79706a294ac3 &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>Laskuri</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:10:07.587922" elapsed="0.000098"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>nappia painettu 0 kertaa</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:10:07.588384" elapsed="0.000075"/>
+</kw>
+<status status="FAIL" start="2024-11-12T17:10:06.894669" elapsed="0.694281">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+#0 0x62a6a31088da &lt;unknown&gt;
+#1 0x62a6a2c2d860 &lt;unknown&gt;
+#2 0x62a6a2c25a61 &lt;unknown&gt;
+#3 0x62a6a2c16278 &lt;unknown&gt;
+#4 0x62a6a2c17f8a &lt;unknown&gt;
+#5 0x62a6a2c1651a &lt;unknown&gt;
+#6 0x62a6a2c15e14 &lt;unknown&gt;
+#7 0x62a6a2c15d32 &lt;unknown&gt;
+#8 0x62a6a2c13e2c &lt;unknown&gt;
+#9 0x62a6a2c1447a &lt;unknown&gt;
+#10 0x62a6a2c30109 &lt;unknown&gt;
+#11 0x62a6a2cbc705 &lt;unknown&gt;
+#12 0x62a6a2c9d4d2 &lt;unknown&gt;
+#13 0x62a6a2cbba9b &lt;unknown&gt;
+#14 0x62a6a2c9d273 &lt;unknown&gt;
+#15 0x62a6a2c6c362 &lt;unknown&gt;
+#16 0x62a6a2c6d33e &lt;unknown&gt;
+#17 0x62a6a30d72ef &lt;unknown&gt;
+#18 0x62a6a30dbdf2 &lt;unknown&gt;
+#19 0x62a6a30c5177 &lt;unknown&gt;
+#20 0x62a6a30dc571 &lt;unknown&gt;
+#21 0x62a6a30ac2ee &lt;unknown&gt;
+#22 0x62a6a30f7b88 &lt;unknown&gt;
+#23 0x62a6a30f7d8a &lt;unknown&gt;
+#24 0x62a6a310758c &lt;unknown&gt;
+#25 0x79706a294ac3 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-s1-t2" name="When button pressed twice the counter is two" line="12">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:10:07.589797" level="INFO">Opening url 'http://localhost:5001'</msg>
+<msg time="2024-11-12T17:10:08.237361" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-12T17:10:08.237779" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+#0 0x62a6a31088da &lt;unknown&gt;
+#1 0x62a6a2c2d860 &lt;unknown&gt;
+#2 0x62a6a2c25a61 &lt;unknown&gt;
+#3 0x62a6a2c16278 &lt;unknown&gt;
+#4 0x62a6a2c17f8a &lt;unknown&gt;
+#5 0x62a6a2c1651a &lt;unknown&gt;
+#6 0x62a6a2c15e14 &lt;unknown&gt;
+#7 0x62a6a2c15d32 &lt;unknown&gt;
+#8 0x62a6a2c13e2c &lt;unknown&gt;
+#9 0x62a6a2c1447a &lt;unknown&gt;
+#10 0x62a6a2c30109 &lt;unknown&gt;
+#11 0x62a6a2cbc705 &lt;unknown&gt;
+#12 0x62a6a2c9d4d2 &lt;unknown&gt;
+#13 0x62a6a2cbba9b &lt;unknown&gt;
+#14 0x62a6a2c9d273 &lt;unknown&gt;
+#15 0x62a6a2c6c362 &lt;unknown&gt;
+#16 0x62a6a2c6d33e &lt;unknown&gt;
+#17 0x62a6a30d72ef &lt;unknown&gt;
+#18 0x62a6a30dbdf2 &lt;unknown&gt;
+#19 0x62a6a30c5177 &lt;unknown&gt;
+#20 0x62a6a30dc571 &lt;unknown&gt;
+#21 0x62a6a30ac2ee &lt;unknown&gt;
+#22 0x62a6a30f7b88 &lt;unknown&gt;
+#23 0x62a6a30f7d8a &lt;unknown&gt;
+#24 0x62a6a310758c &lt;unknown&gt;
+#25 0x79706a294ac3 &lt;unknown&gt;
+</msg>
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="FAIL" start="2024-11-12T17:10:07.589617" elapsed="0.648578">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+#0 0x62a6a31088da &lt;unknown&gt;
+#1 0x62a6a2c2d860 &lt;unknown&gt;
+#2 0x62a6a2c25a61 &lt;unknown&gt;
+#3 0x62a6a2c16278 &lt;unknown&gt;
+#4 0x62a6a2c17f8a &lt;unknown&gt;
+#5 0x62a6a2c1651a &lt;unknown&gt;
+#6 0x62a6a2c15e14 &lt;unknown&gt;
+#7 0x62a6a2c15d32 &lt;unknown&gt;
+#8 0x62a6a2c13e2c &lt;unknown&gt;
+#9 0x62a6a2c1447a &lt;unknown&gt;
+#10 0x62a6a2c30109 &lt;unknown&gt;
+#11 0x62a6a2cbc705 &lt;unknown&gt;
+#12 0x62a6a2c9d4d2 &lt;unknown&gt;
+#13 0x62a6a2cbba9b &lt;unknown&gt;
+#14 0x62a6a2c9d273 &lt;unknown&gt;
+#15 0x62a6a2c6c362 &lt;unknown&gt;
+#16 0x62a6a2c6d33e &lt;unknown&gt;
+#17 0x62a6a30d72ef &lt;unknown&gt;
+#18 0x62a6a30dbdf2 &lt;unknown&gt;
+#19 0x62a6a30c5177 &lt;unknown&gt;
+#20 0x62a6a30dc571 &lt;unknown&gt;
+#21 0x62a6a30ac2ee &lt;unknown&gt;
+#22 0x62a6a30f7b88 &lt;unknown&gt;
+#23 0x62a6a30f7d8a &lt;unknown&gt;
+#24 0x62a6a310758c &lt;unknown&gt;
+#25 0x79706a294ac3 &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>Paina</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:10:08.238778" elapsed="0.000156"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>Paina</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:10:08.239307" elapsed="0.000121"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>nappia painettu 2 kertaa</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:10:08.239811" elapsed="0.000070"/>
+</kw>
+<status status="FAIL" start="2024-11-12T17:10:07.589287" elapsed="0.651073">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+#0 0x62a6a31088da &lt;unknown&gt;
+#1 0x62a6a2c2d860 &lt;unknown&gt;
+#2 0x62a6a2c25a61 &lt;unknown&gt;
+#3 0x62a6a2c16278 &lt;unknown&gt;
+#4 0x62a6a2c17f8a &lt;unknown&gt;
+#5 0x62a6a2c1651a &lt;unknown&gt;
+#6 0x62a6a2c15e14 &lt;unknown&gt;
+#7 0x62a6a2c15d32 &lt;unknown&gt;
+#8 0x62a6a2c13e2c &lt;unknown&gt;
+#9 0x62a6a2c1447a &lt;unknown&gt;
+#10 0x62a6a2c30109 &lt;unknown&gt;
+#11 0x62a6a2cbc705 &lt;unknown&gt;
+#12 0x62a6a2c9d4d2 &lt;unknown&gt;
+#13 0x62a6a2cbba9b &lt;unknown&gt;
+#14 0x62a6a2c9d273 &lt;unknown&gt;
+#15 0x62a6a2c6c362 &lt;unknown&gt;
+#16 0x62a6a2c6d33e &lt;unknown&gt;
+#17 0x62a6a30d72ef &lt;unknown&gt;
+#18 0x62a6a30dbdf2 &lt;unknown&gt;
+#19 0x62a6a30c5177 &lt;unknown&gt;
+#20 0x62a6a30dc571 &lt;unknown&gt;
+#21 0x62a6a30ac2ee &lt;unknown&gt;
+#22 0x62a6a30f7b88 &lt;unknown&gt;
+#23 0x62a6a30f7d8a &lt;unknown&gt;
+#24 0x62a6a310758c &lt;unknown&gt;
+#25 0x79706a294ac3 &lt;unknown&gt;
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-12T17:10:08.241106" elapsed="0.558557"/>
+</kw>
+<status status="FAIL" start="2024-11-12T17:10:06.434462" elapsed="2.365438"/>
+</suite>
+<suite id="s1-s2" name="Reset" source="/home/heikkinv/Documents/ohtu/ohtu_webcounter/webcounter/src/tests/reset.robot">
+<kw name="Open And Configure Browser" owner="resource" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-12T17:10:08.808038" elapsed="0.000582"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:10:08.810398" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-12T17:10:08.808926" elapsed="0.408081"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:10:08.807430" elapsed="0.409902"/>
+</kw>
+<test id="s1-s2-t1" name="When counter has a nonzero value and it is reset the value becomes zero" line="7">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:10:09.218490" level="INFO">Opening url 'http://localhost:5001'</msg>
+<msg time="2024-11-12T17:10:09.932867" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-12T17:10:09.933244" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+#0 0x5c6bb6c0b8da &lt;unknown&gt;
+#1 0x5c6bb6730860 &lt;unknown&gt;
+#2 0x5c6bb6728a61 &lt;unknown&gt;
+#3 0x5c6bb6719278 &lt;unknown&gt;
+#4 0x5c6bb671af8a &lt;unknown&gt;
+#5 0x5c6bb671951a &lt;unknown&gt;
+#6 0x5c6bb6718e14 &lt;unknown&gt;
+#7 0x5c6bb6718d32 &lt;unknown&gt;
+#8 0x5c6bb6716e2c &lt;unknown&gt;
+#9 0x5c6bb671747a &lt;unknown&gt;
+#10 0x5c6bb6733109 &lt;unknown&gt;
+#11 0x5c6bb67bf705 &lt;unknown&gt;
+#12 0x5c6bb67a04d2 &lt;unknown&gt;
+#13 0x5c6bb67bea9b &lt;unknown&gt;
+#14 0x5c6bb67a0273 &lt;unknown&gt;
+#15 0x5c6bb676f362 &lt;unknown&gt;
+#16 0x5c6bb677033e &lt;unknown&gt;
+#17 0x5c6bb6bda2ef &lt;unknown&gt;
+#18 0x5c6bb6bdedf2 &lt;unknown&gt;
+#19 0x5c6bb6bc8177 &lt;unknown&gt;
+#20 0x5c6bb6bdf571 &lt;unknown&gt;
+#21 0x5c6bb6baf2ee &lt;unknown&gt;
+#22 0x5c6bb6bfab88 &lt;unknown&gt;
+#23 0x5c6bb6bfad8a &lt;unknown&gt;
+#24 0x5c6bb6c0a58c &lt;unknown&gt;
+#25 0x73e020694ac3 &lt;unknown&gt;
+</msg>
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="FAIL" start="2024-11-12T17:10:09.218221" elapsed="0.715409">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+#0 0x5c6bb6c0b8da &lt;unknown&gt;
+#1 0x5c6bb6730860 &lt;unknown&gt;
+#2 0x5c6bb6728a61 &lt;unknown&gt;
+#3 0x5c6bb6719278 &lt;unknown&gt;
+#4 0x5c6bb671af8a &lt;unknown&gt;
+#5 0x5c6bb671951a &lt;unknown&gt;
+#6 0x5c6bb6718e14 &lt;unknown&gt;
+#7 0x5c6bb6718d32 &lt;unknown&gt;
+#8 0x5c6bb6716e2c &lt;unknown&gt;
+#9 0x5c6bb671747a &lt;unknown&gt;
+#10 0x5c6bb6733109 &lt;unknown&gt;
+#11 0x5c6bb67bf705 &lt;unknown&gt;
+#12 0x5c6bb67a04d2 &lt;unknown&gt;
+#13 0x5c6bb67bea9b &lt;unknown&gt;
+#14 0x5c6bb67a0273 &lt;unknown&gt;
+#15 0x5c6bb676f362 &lt;unknown&gt;
+#16 0x5c6bb677033e &lt;unknown&gt;
+#17 0x5c6bb6bda2ef &lt;unknown&gt;
+#18 0x5c6bb6bdedf2 &lt;unknown&gt;
+#19 0x5c6bb6bc8177 &lt;unknown&gt;
+#20 0x5c6bb6bdf571 &lt;unknown&gt;
+#21 0x5c6bb6baf2ee &lt;unknown&gt;
+#22 0x5c6bb6bfab88 &lt;unknown&gt;
+#23 0x5c6bb6bfad8a &lt;unknown&gt;
+#24 0x5c6bb6c0a58c &lt;unknown&gt;
+#25 0x73e020694ac3 &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>Paina</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:10:09.934237" elapsed="0.000092"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>Nollaa</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:10:09.934686" elapsed="0.000067"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>nappia painettu 0 kertaa</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:10:09.935061" elapsed="0.000068"/>
+</kw>
+<status status="FAIL" start="2024-11-12T17:10:09.217541" elapsed="0.718076">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+#0 0x5c6bb6c0b8da &lt;unknown&gt;
+#1 0x5c6bb6730860 &lt;unknown&gt;
+#2 0x5c6bb6728a61 &lt;unknown&gt;
+#3 0x5c6bb6719278 &lt;unknown&gt;
+#4 0x5c6bb671af8a &lt;unknown&gt;
+#5 0x5c6bb671951a &lt;unknown&gt;
+#6 0x5c6bb6718e14 &lt;unknown&gt;
+#7 0x5c6bb6718d32 &lt;unknown&gt;
+#8 0x5c6bb6716e2c &lt;unknown&gt;
+#9 0x5c6bb671747a &lt;unknown&gt;
+#10 0x5c6bb6733109 &lt;unknown&gt;
+#11 0x5c6bb67bf705 &lt;unknown&gt;
+#12 0x5c6bb67a04d2 &lt;unknown&gt;
+#13 0x5c6bb67bea9b &lt;unknown&gt;
+#14 0x5c6bb67a0273 &lt;unknown&gt;
+#15 0x5c6bb676f362 &lt;unknown&gt;
+#16 0x5c6bb677033e &lt;unknown&gt;
+#17 0x5c6bb6bda2ef &lt;unknown&gt;
+#18 0x5c6bb6bdedf2 &lt;unknown&gt;
+#19 0x5c6bb6bc8177 &lt;unknown&gt;
+#20 0x5c6bb6bdf571 &lt;unknown&gt;
+#21 0x5c6bb6baf2ee &lt;unknown&gt;
+#22 0x5c6bb6bfab88 &lt;unknown&gt;
+#23 0x5c6bb6bfad8a &lt;unknown&gt;
+#24 0x5c6bb6c0a58c &lt;unknown&gt;
+#25 0x73e020694ac3 &lt;unknown&gt;
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-12T17:10:09.936699" elapsed="0.558424"/>
+</kw>
+<status status="FAIL" start="2024-11-12T17:10:08.801377" elapsed="1.693977"/>
+</suite>
+<status status="FAIL" start="2024-11-12T17:10:06.422547" elapsed="4.074412"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Increment">Tests.Increment</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="Reset">Tests.Reset</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
